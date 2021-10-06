@@ -83,13 +83,34 @@ namespace _4.gyak_IRF
                 values[counter, 6] = f.FloorArea;
                 values[counter, 7] = f.Price / f.FloorArea;
                 values[counter, 8] = "";
+                counter++;
             }
 
             xlSheet.get_Range(
                     GetCell(2, 1),
                     GetCell(1 + values.GetLength(0), values.GetLength(1))).Value2 = values;
 
+            Exel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, headers.Length));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Exel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Exel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(Exel.XlLineStyle.xlContinuous, Exel.XlBorderWeight.xlThick);
+
+
+            Exel.Range bodyRange = xlSheet.get_Range(GetCell(2, 1), GetCell(1 + values.GetLength(0), values.GetLength(1)));
+            bodyRange.BorderAround2(Exel.XlLineStyle.xlContinuous, Exel.XlBorderWeight.xlThick);
+
+            Exel.Range firstcolume = xlSheet.get_Range(GetCell(2, 1), GetCell(values.GetLength(0),1));
+            firstcolume.Font.Bold = true;
+            firstcolume.Interior.Color = Color.LightYellow;
+
+            Exel.Range lastcolume = xlSheet.get_Range(GetCell(2, values.GetLength(1)), GetCell(1 + values.GetLength(0), values.GetLength(1)));
+            lastcolume.Interior.Color = Color.LightGreen;
         }
+
 
         private string GetCell(int x, int y)
         {
