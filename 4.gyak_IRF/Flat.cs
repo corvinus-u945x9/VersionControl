@@ -14,6 +14,7 @@ namespace _4.gyak_IRF
     
     public partial class Flat
     {
+
         public int FlatSK { get; set; }
         public string Code { get; set; }
         public string Vendor { get; set; }
