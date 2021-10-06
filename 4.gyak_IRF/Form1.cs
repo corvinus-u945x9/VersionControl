@@ -24,6 +24,7 @@ namespace _4.gyak_IRF
             InitializeComponent();
             LoadData();
             CreateExel();
+
         }
 
         private void CreateExel()
