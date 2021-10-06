@@ -23,6 +23,30 @@ namespace _4.gyak_IRF
         {
             InitializeComponent();
             LoadData();
+            CreateExel();
+        }
+
+        private void CreateExel()
+        {
+            try
+            {
+                xlApp = new Exel.Application();
+                xlWB = xlApp.Workbooks.Add(Missing.Value);
+                xlSheet = xlWB.ActiveSheet;
+
+                xlApp.Visible = true;
+                xlApp.UserControl = true;
+            }
+            catch (Exception)
+            {
+                string errMsg = string.Format("Error: {0}\nLine: {1}");
+                MessageBox.Show(errMsg, "Error");
+
+                xlWB.Close(false, Type.Missing, Type.Missing);
+                xlApp.Quit();
+                xlWB = null;
+                xlApp = null;
+            }
         }
 
         private void LoadData()
