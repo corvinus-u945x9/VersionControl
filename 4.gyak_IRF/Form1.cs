@@ -12,10 +12,17 @@ namespace _4.gyak_IRF
 {
     public partial class Form1 : Form
     {
+        RealEstateEntities context = new RealEstateEntities();
+        List<Flat> flats;
         public Form1()
         {
             InitializeComponent();
-            RealEstateEntities context = new RealEstateEntities();
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            flats = context.Flat.ToList();
         }
     }
 }
