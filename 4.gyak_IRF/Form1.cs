@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Exel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace _4.gyak_IRF
 {
