@@ -16,6 +16,9 @@ namespace _4.gyak_IRF
     {
         RealEstateEntities context = new RealEstateEntities();
         List<Flat> flats;
+        Exel.Application xlApp;
+        Exel.Workbook xlWB;
+        Exel.Worksheet xlSheet;
         public Form1()
         {
             InitializeComponent();
