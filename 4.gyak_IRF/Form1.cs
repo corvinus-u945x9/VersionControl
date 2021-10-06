@@ -15,6 +15,7 @@ namespace _4.gyak_IRF
         public Form1()
         {
             InitializeComponent();
+            RealEstateEntities context = new RealEstateEntities();
         }
     }
 }
