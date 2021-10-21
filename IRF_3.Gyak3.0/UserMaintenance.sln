@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserMaintenance", "UserMain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.gyak_IRF", "..\4.gyak_IRF\4.gyak_IRF.csproj", "{CE67D8AC-C970-48CA-ABA3-8489995D9C1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRF_week05", "..\IRF_week05\IRF_week05.csproj", "{77E83C3C-2089-457F-8C2C-61AF7073CB8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE67D8AC-C970-48CA-ABA3-8489995D9C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE67D8AC-C970-48CA-ABA3-8489995D9C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE67D8AC-C970-48CA-ABA3-8489995D9C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
