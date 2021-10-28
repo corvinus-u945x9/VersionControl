@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.gyak_IRF", "..\4.gyak_IRF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRF_week05", "..\IRF_week05\IRF_week05.csproj", "{77E83C3C-2089-457F-8C2C-61AF7073CB8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRF_week06", "..\IRF_week06\IRF_week06.csproj", "{D8A54F44-E9B4-4626-93BB-300AA87CD862}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E83C3C-2089-457F-8C2C-61AF7073CB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A54F44-E9B4-4626-93BB-300AA87CD862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A54F44-E9B4-4626-93BB-300AA87CD862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A54F44-E9B4-4626-93BB-300AA87CD862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A54F44-E9B4-4626-93BB-300AA87CD862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
