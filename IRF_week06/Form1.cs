@@ -13,11 +13,14 @@ namespace IRF_week06
 {
     public partial class Form1 : Form
     {
+        BindingList<RateDate> rates = new BindingList<RateDate>();
+        
         
         public Form1()
         {
             InitializeComponent();
             Fügvény();
+            dataGridView1.DataSource = rates;
         }
 
         private void Fügvény()
