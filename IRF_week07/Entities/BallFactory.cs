@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IRF_week07
 {
-    class BallFactory
+    public class BallFactory
     {
         public Ball CreateNew()
         {

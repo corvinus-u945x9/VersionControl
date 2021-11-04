@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace IRF_week07
 {
-    class Ball:Label
+    public class Ball:Label
     {
         public Ball()
         {
