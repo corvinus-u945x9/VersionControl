@@ -25,7 +25,7 @@ namespace IRF_week07
 
         protected abstract void DrawImage(Graphics g);
 
-        public virtual void MoveBall()
+        public virtual void MoveToy()
         {
             Left += 1;
         }
