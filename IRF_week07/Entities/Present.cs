@@ -4,22 +4,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace IRF_week07
 {
-    public class Ball:Toy
+    class Present:Toy
     {
-        public SolidBrush BallColor { get; private set; }
-
-        public Ball(Color color)
+        public Present()
         {
-            BallColor = new SolidBrush(color);
+
         }
+
         protected override void DrawImage(Graphics g)
         {
-            g.FillEllipse(BallColor, 0, 0, Width, Height);
+            g.FillRectangle(new SolidBrush(Color.Blue), 50, 50, Width, Height);
         }
-
     }
 }

@@ -66,7 +66,10 @@ namespace IRF_week07
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Factory = new BallFactory();
+            Factory = new BallFactory
+            {
+                BallColor = button3.BackColor
+            };
         }
 
         private void DisplayNext()
@@ -91,6 +94,11 @@ namespace IRF_week07
                 return;
             }
             button.BackColor = colorPicker.Color;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Factory = new PresentFactroy();
         }
     }
 }
