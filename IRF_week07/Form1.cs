@@ -85,6 +85,11 @@ namespace IRF_week07
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Szinvalasztas(sender);
+        }
+
+        private static void Szinvalasztas(object sender)
+        {
             var button = (Button)sender;
             ColorDialog colorPicker = new ColorDialog();
 
@@ -98,7 +103,38 @@ namespace IRF_week07
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Factory = new PresentFactroy();
+            Factory = new PresentFactroy
+            {
+                AjanándékSzin = button5.BackColor,
+                szalagszin = button6.BackColor
+            
+            };
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+            ColorDialog colorPicker = new ColorDialog();
+
+            colorPicker.Color = button.BackColor;
+            if (colorPicker.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            button.BackColor = colorPicker.Color;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+            ColorDialog colorPicker = new ColorDialog();
+
+            colorPicker.Color = button.BackColor;
+            if (colorPicker.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            button.BackColor = colorPicker.Color;
         }
     }
 }
