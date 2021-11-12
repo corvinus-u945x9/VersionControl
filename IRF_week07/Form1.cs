@@ -135,6 +135,7 @@ namespace IRF_week07
                 return;
             }
             button.BackColor = colorPicker.Color;
+            //vége ez most
         }
     }
 }
