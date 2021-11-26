@@ -31,6 +31,7 @@ namespace IRF_week07
         {
             InitializeComponent();
             Factory = new CarFactory();
+            MessageBox.Show("hello" + "\n" + "alma");
         }
 
         private void conveyorTimer_Tick(object sender, EventArgs e)

@@ -9,6 +9,7 @@ namespace IRF_week07
 {
     class Car : Toy
     {
+
         protected override void DrawImage(Graphics g)
         {
             Image imageFile = Image.FromFile("Images/car.png");
