@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample", "..\..\..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample.Test", "..\UnitTestExample.Test\UnitTestExample.Test.csproj", "{2B8D6C26-CE6F-4D82-8260-17CEE0B234AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mikroszimulacio", "..\Mikroszimulacio\Mikroszimulacio.csproj", "{34C330B7-D54B-4DE2-888A-1EA6B6DDC656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{2B8D6C26-CE6F-4D82-8260-17CEE0B234AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B8D6C26-CE6F-4D82-8260-17CEE0B234AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B8D6C26-CE6F-4D82-8260-17CEE0B234AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C330B7-D54B-4DE2-888A-1EA6B6DDC656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C330B7-D54B-4DE2-888A-1EA6B6DDC656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C330B7-D54B-4DE2-888A-1EA6B6DDC656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C330B7-D54B-4DE2-888A-1EA6B6DDC656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
